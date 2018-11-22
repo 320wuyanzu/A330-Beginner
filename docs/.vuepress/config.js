@@ -1,13 +1,18 @@
 module.exports = {
-    base: '/A320FM/',
-    title: 'A320FM Study Notes',
-    description: 'Just for A319/A320',
+    head: [
+        ['link', { rel: 'stylesheet', href: '/font.css' }]
+    ],
+    base: '/A330-Beginner/',
+    title: '入门篇',
+    description: 'A330机型介绍',
     themeConfig: {
-        lastUpdated: '最后一次编辑',
+        lastUpdated: '最后一次修改',
         nav: [
-            { text: 'Personal Homepage', link: 'https://320wuyanzu.github.io' },
-            { text: 'Home', link: '/' },
-            { text: 'A330 Notes', link: 'https://320wuyanzu.github.io/410.html' },
+            { text: '我的个人主页', link: 'https://320wuyanzu.github.io' },
+            { text: '入门篇', link: '/' },
+            { text: '初级篇', link: 'https://320wuyanzu.github.io/404' },
+            { text: '中级篇', link: 'https://320wuyanzu.github.io/404' },
+            { text: '高级篇', link: 'https://320wuyanzu.github.io/404' },
         ],
         sidebarDepth: 2,
         sidebar: sidebar_group()
@@ -20,8 +25,8 @@ module.exports = {
  */
 function sidebar_group() {
     let ATA21 = {
-        title: 'ATA21-Air Conditioning',
-        children: []
+        title: 'ATA21-空调系统',
+        children: ['/ATA21/']
     };
     let ATA22 = {
         title: 'ATA22-Auto Flight',
@@ -103,37 +108,43 @@ function sidebar_group() {
         title: 'ATA51-Structures',
         children: []
     };
-    let ATA52 = {
-        title: 'ATA52-Doors',
-        children: []
+
+    let ATA52 ={
+        title: '52-门结构',
+        children: ['/ATA52/']
+    };
+    let ATA53 ={
+        title: '53-机身结构',
+        children: ['/ATA53/','/ATA53/1','/ATA53/2','/ATA53/3','/ATA53/4','/ATA53/5']
     };
     let ATA71 = {
         title: 'ATA71-Power Plant(CFM56)',
         children: ['/ATA71/', '/ATA71/72/', '/ATA71/73/', '/ATA71/74/','/ATA71/75/','/ATA71/76/','/ATA71/77/','/ATA71/78/','/ATA71/79/','/ATA71/80/']
     };
     return [
-        ATA21,
-        ATA22,
-        ATA23,
-        ATA24,
-        ATA25,
-        ATA26,
-        ATA27,
-        ATA28,
-        ATA29,
-        ATA30,
-        ATA31,
-        ATA32,
-        ATA33,
-        ATA34,
-        ATA35,
-        ATA36,
-        ATA38,
-        ATA46,
-        ATA47,
-        ATA49,
-        ATA51,
+        //ATA21,
+        //ATA22,
+        //ATA23,
+        //ATA24,
+        //ATA25,
+        //ATA26,
+        //ATA27,
+        //ATA28,
+        //ATA29,
+        //ATA30,
+        //ATA31,
+        //ATA32,
+        //ATA33,
+        //ATA34,
+        //ATA35,
+        //ATA36,
+        //ATA38,
+        //ATA46,
+        //ATA47,
+        //ATA49,
+        //ATA51,
         ATA52,
-        ATA71
+        ATA53,
+        //ATA71
     ]
 }

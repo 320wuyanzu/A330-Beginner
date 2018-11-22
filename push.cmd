@@ -6,10 +6,10 @@ cd ./docs/.vuepress/dist
 git init
 git add *
 git commit -m%time%
-git push -f git@github.com:320wuyanzu/A320FM.git master:gh-pages
+git push -f git@github.com:320wuyanzu/A330-Beginner.git master:gh-pages
 
 :: 再push源文档
 cd ../../../
 git add *
-git commit -m"发动机的目录出来了"
-git push -f git@github.com:320wuyanzu/A320FM.git collapse:collapse
+git commit -m"额"
+git push -f git@github.com:320wuyanzu/A330-Beginner.git collapse:collapse
